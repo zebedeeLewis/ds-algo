@@ -1,6 +1,53 @@
 {
   "version": 2,
-  "projects": {},
+  "projects": {
+    "leetcode-ds-arrays--find-numbers": {
+      "root": "libs/leetcode/ds/arrays//find-numbers",
+      "sourceRoot": "libs/leetcode/ds/arrays/find-numbers/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/leetcode/ds/arrays//find-numbers/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/leetcode/ds/arrays/find-numbers"],
+          "options": {
+            "jestConfig": "libs/leetcode/ds/arrays/find-numbers/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "leetcode-ds-arrays--max-consecutive-ones": {
+      "root": "libs/leetcode/ds/arrays//max-consecutive-ones",
+      "sourceRoot": "libs/leetcode/ds/arrays/max-consecutive-ones/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/leetcode/ds/arrays//max-consecutive-ones/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/leetcode/ds/arrays/max-consecutive-ones"],
+          "options": {
+            "jestConfig": "libs/leetcode/ds/arrays/max-consecutive-ones/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }

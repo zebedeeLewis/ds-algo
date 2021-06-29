@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ds-algo/leetcode/ds/arrays//find-numbers": [
+        "libs/leetcode/ds/arrays/find-numbers/src/index.ts"
+      ],
+      "@ds-algo/leetcode/ds/arrays//max-consecutive-ones": [
+        "libs/leetcode/ds/arrays/max-consecutive-ones/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
